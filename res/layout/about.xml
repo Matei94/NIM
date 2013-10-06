@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <!-- Top Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/buton_general" >
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="About"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Middle Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:text="\n\n\nNim 1.0.0\n\n\nCopyright &#169; 2013 CodeIndustria Romania\n Ltd. All rights reserved.\n\n\n Help:\nmatei.rm94@gmail.com\n\n\nFind more on:\ncodeindustria.com"
+            android:textColor="#000000" />
+        	
+
+    </LinearLayout>
+
+    <!-- Bottom Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#4D9131" 
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bGoBack"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="100"
+            android:text="Go back" 
+            android:textColor="#FFFFFF"
+            android:background="@color/buton_general" />
+    </LinearLayout>
+
+</LinearLayout>

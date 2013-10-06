@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <!-- Top Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/buton_general"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Welcome to the Game of Nim"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    
+    <!-- Middle Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical" 
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tvGameDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="left|center_vertical"
+            android:padding="10sp"
+            android:text="\tNim is a mathematical game of strategy in which two players take turns removing objects from distinct heaps. On each turn, a player must remove at least one object, and may remove any number of objects provided they all come from the same heap.\n\tNim can be played as a misere game, in which the player to take the last object loses. Nim can also be played as a normal play game, which means that the person who takes the last object wins."
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <!-- First Delimitation -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp" >
+
+            <TextView
+                android:id="@+id/tvGameType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select type of game:"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/rgGameType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbMisere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Misere                      " />
+
+                <RadioButton
+                    android:id="@+id/rbNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal" />
+            </RadioGroup>
+        </LinearLayout>
+        
+        <!-- Second Delimitation -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:layout_margin="10sp" >
+
+            <TextView
+                android:id="@+id/tvOpponent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Choose your oppenent:"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/rgOpponent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbMaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Ultimate Master      " />
+
+                <RadioButton
+                    android:id="@+id/rbFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friend" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#4D9131"
+        android:orientation="horizontal"
+        android:weightSum="99" >
+
+        <Button
+            android:id="@+id/bAbout"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="33"
+            android:background="@color/buton_general"
+            android:text="About"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bPlay"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="33"
+            android:background="@color/buton_general"
+            android:text="Play"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bExit"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="33"
+            android:background="@color/buton_general"
+            android:clickable="true"
+            android:text="Exit"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

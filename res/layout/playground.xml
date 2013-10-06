@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark" >
+
+    <TextView
+        android:id="@+id/tvHeapState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="HEAP #1: |\nHEAP #2: | | |\nHEAP #3: | | | | |\nHEAP #4: | | | | | | |"
+        android:textColor="#00FF00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160sp"
+        android:layout_centerHorizontal="true"
+        android:text="Your turn!"
+        android:textColor="#00FF00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLastMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5sp"
+        android:layout_centerHorizontal="true"
+        android:text="Last Move: No move yet!"
+        android:textColor="#00FF00"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bHeapSelector"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/tvLastMove"
+        android:layout_marginBottom="180sp"
+        android:layout_marginLeft="15sp"
+        android:text="Heap:   ?"
+        android:textColor="#00FF00"
+        android:background="@color/button_special" />
+    
+    <Button
+        android:id="@+id/bStickSelector"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/tvLastMove"
+        android:layout_marginBottom="130sp"
+        android:layout_marginLeft="15sp"
+        android:text="Sticks: ?"
+        android:textColor="#00FF00"
+        android:background="@color/button_special" />
+
+    <Button
+        android:id="@+id/bOk"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignTop="@+id/bHeapSelector"
+        android:layout_toRightOf="@+id/bHeapSelector"
+        android:background="@color/button_ok" />
+
+</RelativeLayout>

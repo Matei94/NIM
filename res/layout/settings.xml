@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <!-- Top Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/buton_general" >
+
+        <TextView
+            android:id="@+id/tvSettings"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Settings"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Middle Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Working Area"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <!-- Bottom Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#4D9131" 
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bDone"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Done" 
+            android:textColor="#FFFFFF"
+            android:background="@color/buton_general" />
+        
+        <Button
+            android:id="@+id/bAbout"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="About" 
+            android:textColor="#FFFFFF"
+            android:background="@color/buton_general" />
+    </LinearLayout>
+
+</LinearLayout>
